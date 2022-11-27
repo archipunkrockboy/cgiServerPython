@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ЖИВОПИСЬ</title>
+</head>
+<body>
+<form action = "/cgi-bin/pictures.py">
+    <div>
+        <label> Добавить запись в таблицу Pictures</label>
+        <input type="text" name="name" placeholder="Название">
+        <input type="number" name="painter_id" placeholder="ID художника">
+        <input type="number" name="gallery_id" placeholder="ID галереи">
+        <input type="text" name="genre" placeholder="Жанр">
+        <input type="text" name="year" placeholder="Год">
+    </div>
+    <input type="submit">
+</form>
+<form action = "/cgi-bin/painters.py">
+    <div>
+        <label> Добавить запись в таблицу Painters</label>
+        <input type="text" name="name" placeholder="ФИО">
+        <input type="text" name="country" placeholder="Страна">
+    </div>
+    <input type="submit">
+</form>
+<form action = "/cgi-bin/galleries.py">
+    <div>
+        <label> Добавить запись в таблицу Galleries</label>
+        <input type="text" name="name" placeholder="Название">
+        <input type="text" name="city" placeholder="Город">
+        <input type="text" name="country" placeholder="Страна">
+    </div>
+    <input type="submit">
+</form>
+
+<br>
+<a class="link-primary" target="_blank" href="/cgi-bin/show_pictures.py">Список картин</a>
+<br>
+<a class="link-primary" target="_blank" href="/cgi-bin/show_painters.py">Список художников</a>
+<br>
+<a class="link-primary" target="_blank" href="/cgi-bin/show_galleries.py">Список галерей</a>
+<br>
+</body>
+</html>
